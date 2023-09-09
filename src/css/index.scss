@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.body {
+    background-color: black;
+    position: relative;
+
+    .backgroundeImg {
+        width: 100%;
+    }
+
+    .backgrounde {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0.4;
+        background-color: black;
+        z-index: 1;
+    }
+
+    .btnContainer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+
+        .button {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            border-radius: 20px;
+            opacity: 0.8;
+            border: none;
+            cursor: pointer;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            &::before {
+                text-align: center;
+                font-size: 30px;
+                content: "+";
+            }
+
+            .structureName {
+                display: none;
+                font-size: 19px;
+                overflow: hidden;
+            }
+        }
+
+        .activeBtn {
+
+            width: auto;
+            padding: 0px 16px;
+            opacity: 1;
+
+            &::before {
+                transform: translateY(-10%);
+                content: "-";
+            }
+
+            .structureName {
+                margin-left: 10px;
+                display: block;
+            }
+        }
+
+
+        .blueBtn {
+            background-color: #3877EE;
+        }
+
+        .greenBtn {
+            background-color: #6ABF4B;
+        }
+
+        // #region BtnPlacement
+        .Gr669 {
+            left: 27%;
+            top: 27%;
+        }
+
+        .Gr684 {
+            left: 74%;
+            top: 18%;
+        }
+
+        .Gr679 {
+            left: 59%;
+            top: 38%;
+        }
+
+        .Gr683 {
+            left: 75%;
+            top: 44%;
+        }
+
+        .Gr678 {
+            left: 35%;
+            top: 43%
+        }
+
+        .Gr682 {
+            left: 56%;
+            top: 58%;
+        }
+
+        .Gr681 {
+            left: 68%;
+            top: 61%;
+        }
+
+        .Gr685 {
+            left: 87%;
+            top: 69%;
+        }
+
+        .Gr670 {
+            left: 24%;
+            top: 65%;
+        }
+
+        .Gr680 {
+            left: 61%;
+            top: 76%
+        }
+
+        //#endregion
+    }
+}
