@@ -5,7 +5,7 @@ let activeElements = [];
 
 const toggleActiveElement = (element) => {
     if (activeElements.includes(element)) {
-        activeElements.filter(actElement => actElement !== element)
+        activeElements=activeElements.filter(actElement => actElement !== element)
     } else activeElements.push(element)
 }
 
