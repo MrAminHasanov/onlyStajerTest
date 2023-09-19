@@ -8,10 +8,8 @@
 .btnContainer {
   width: 100vw;
   height: 100vh;
-  position: relative;
   background-image: url(../img/background.png);
   background-size: 100% 100%;
-  position: absolute;
 }
 .btnContainer::after {
   content: "";
@@ -80,7 +78,7 @@
   top: 18%;
 }
 .btnContainer .Gr684::after {
-  content: "Апортименты";
+  content: "Апартаменты";
 }
 .btnContainer .Gr679 {
   left: 59%;
